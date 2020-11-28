@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Person() {
+function CustomLink() {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Person() {
     )
 }
 
-export default Person
+export default CustomLink

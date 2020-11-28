@@ -1,17 +1,16 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export const Tasks = () => {
+export const BackOffice = () => {
     return (
         <div>
-            
+            BackOffice
         </div>
     )
 }
 
-Tasks.propTypes = {
+BackOffice.propTypes = {
     prop: PropTypes
 }
 
@@ -23,4 +22,4 @@ const mapDispatchToProps = {
     
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Tasks)
+export default connect(mapStateToProps, mapDispatchToProps)(BackOffice)

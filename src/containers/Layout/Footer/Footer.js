@@ -1,9 +1,8 @@
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export const Tasks = () => {
+export const Footer = () => {
     return (
         <div>
             
@@ -11,7 +10,7 @@ export const Tasks = () => {
     )
 }
 
-Tasks.propTypes = {
+Footer.propTypes = {
     prop: PropTypes
 }
 
@@ -23,4 +22,5 @@ const mapDispatchToProps = {
     
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Tasks)
+export default connect(mapStateToProps, mapDispatchToProps)(Footer)
+

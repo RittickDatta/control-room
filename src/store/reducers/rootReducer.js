@@ -1,18 +1,13 @@
-const { ADD_TASK } = require("../actions/actionTypes")
+import { combineReducers } from 'redux';
 
-const initialState = {
+import taskReducer from './task';
+import personReducer from './person';
+import meetingReducer from './meeting';
 
-}
-
-const rootReducer = (state = initialState, action) => {
-    switch(action.type) {
-        case ADD_TASK:
-            console.log('ADD TASK[RR]');
-            break;
-        default:
-            console.log('Action Type is Not Defined');
-    }
-}
+const rootReducer = combineReducers({
+    tasks: taskReducer,
+    persons: personReducer,
+    meetings: meetingReducer
+})
 
 export default rootReducer;
-
